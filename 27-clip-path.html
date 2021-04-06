@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .box{
+        /* clip-path( x y , x y , x y )  */
+
+        /* clip-path x- left 0% ,x- right 100% ; 
+        y-bottom 100% y-top 0% */
+
+        /* clip-path( 第一個點 , 第二個點 , 第三個點 )  */
+        clip-path: polygon(0% 100%,50% 50%,100% 100%);
+        -webkit-clip-path: polygon(0% 100%,50% 50%,100% 100%);
+        -moz-clip-path: polygon(0% 100%,50% 50%,100% 100%);
+        background-color: red;
+        width: 100%;
+        height: 80px;
+      }
+
+    </style>
+  </head>
+    <div class="box"></div>
+  </body>
+</html>
